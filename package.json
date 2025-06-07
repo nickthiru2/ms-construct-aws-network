@@ -4,6 +4,11 @@
   "description": "A reusable AWS CDK construct for network infrastructure with VPC, subnets, and NAT gateways",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "imports": {
+    "#src/*": "./src/*",
+    "#types/*": "./types/*",
+    "#constants/*": "./constants/*"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nickthiru2/ms-construct-aws-network.git"
@@ -48,6 +53,12 @@
   },
   "files": [
     "lib/**/*.js",
-    "lib/**/*.d.ts"
+    "lib/**/*.d.ts",
+    "types/**/*.ts",
+    "constants/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "types/**/*.js",
+    "constants/**/*.js"
   ]
 }
